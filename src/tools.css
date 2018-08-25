@@ -4,6 +4,17 @@
     background: rgb(11, 111, 204);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.vertical_bar > div {
+    margin: 5px;
+    background: rgb(20, 72, 82);
+    color: white;
+
+    /* they will have the same size in proportion to every other div inside vertical bar */
+    flex: 1;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
