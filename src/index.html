@@ -4,38 +4,45 @@
     <head>
         <title>e-Kanban</title>
         <link rel="stylesheet" href="header.css" />
+        <link rel="stylesheet" href="tools.css" />
+        <link rel="stylesheet" href="flex_containers.css" />
     </head>
     <style>
         html, body{
-            width:100%;
-            height:100%;
             margin: 0;
-        }
-        body{
-            min-width: 600px;
         }
     </style>
     <body>
-        <!-- header with logo -->
-        <div id='header_bar'>
-            <div id="centered_header">
-                e-Kanban
-            </div>
-        </div>
-        <!-- lefthand vertical menu containing tools -->
-        <div></div>
-        <!-- centered whiteboard where tasks and workflows will be set -->
-        <div></div>
-        <!-- 
-            footer with useful information about creator, philosophy and more;
-            
-            WARNING:  This div must be below the 100% height of the page this 
-            way screen will be locked with above divs and this one will be
-            hidden at a first glance, and user will only be able to scroll down 
-            when they scroll while pressing mouse 2 button.
-            That is needed because user may scroll down within whiteboard to 
-            reach out further tasks notes.
-        -->
-        <div></div>
+        <div class="vertical_flex_container">
+
+            <!-- header with logo -->
+            <div id='header_bar'><div id="centered_header">e-Kanban</div></div>
+
+            <div class="horizontal_flex_container">
+                
+                <!-- lefthand vertical menu containing tools -->
+                <div class="vertical_bar">
+                    AAAAAAA
+                </div>
+                <!-- centered whiteboard where tasks and workflows will be set -->
+                <div>
+                    WUTWUTWUTUWUT
+                </div>
+
+            </div> <!-- END OF HORIZONTAL FLEX CONTAINER -->
+
+            <!-- 
+                footer with useful information about creator, philosophy and more;
+                
+                WARNING:  This div must be below the 100% height of the page this 
+                way screen will be locked with above divs and this one will be
+                hidden at a first glance, and user will only be able to scroll down 
+                when they scroll while pressing mouse 2 button.
+                That is needed because user may scroll down within whiteboard to 
+                reach out further tasks notes.
+            -->
+            <div></div>
+
+        </div> <!-- END OF VERTICAL FLEX CONTAINER -->
     </body>
 </html>

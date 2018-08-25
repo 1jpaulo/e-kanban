@@ -1,0 +1,27 @@
+/*
+ * This vertical and horizontal container will put in sequence from top to 
+ * bottom levels:
+ * ╔═══════════════════╗
+ * ║        HEADER     ║ 1st level
+ * ║═══════╗╔══════════║
+ * ║TOOLS  ║║WHITEBOARD║ 2nd level
+ * ║═══════╝╚══════════║<------------------ end of the screen
+ * ║        FOOTER     ║ 3th level <--- to reach this level we have to scroll down
+ * ╚═══════════════════╝
+ *
+ * Details: header and footer will have a defined height size, however the 
+ * 2nd level will complete the screen height till achieve 100%
+ */
+
+.vertical_flex_container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.horizontal_flex_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;   
+    
+}
