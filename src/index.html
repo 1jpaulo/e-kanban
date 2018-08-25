@@ -12,14 +12,20 @@
     <style>
         html, body{
             margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
     </style>
     <body>
         <div class="vertical_flex_container">
 
             <!-- header with logo -->
-            <div id='header_bar'><div id="centered_header">e-Kanban</div></div>
+            <div class="header_bar"><div class="centered_header">e-Kanban</div></div>
+
+            <!-- another header below logo where the name of kanban board will be shown -->
+            <div class="header_bar name">
+                <div class="project_file">Criar Projeto</div>
+                <div class="centered_header">My Scrum Project</div>
+            </div>
 
             <div class="horizontal_flex_container">
                 
@@ -31,7 +37,9 @@
                 </div>
                 <!-- centered whiteboard where tasks and workflows will be set -->
                 <div class="whiteboard_container">
-                    HERE WE HAVE THE WHITEBOARD
+                    <div class="whiteboard_commons todo"></div>
+                    <div class="whiteboard_commons doing"></div>
+                    <div class="whiteboard_commons done"></div>
                 </div>
 
             </div> <!-- END OF HORIZONTAL FLEX CONTAINER -->

@@ -1,4 +1,28 @@
 .whiteboard_container{
     width: 100%;
     padding: 0;
+    display: flex;
+    background: rgb(58, 58, 58);
+    justify-content: space-around;
 }
+
+.whiteboard_commons{
+    background: white !important;
+    margin: .5em;
+    color: black !important;
+    flex: 1;
+    width: 10%;
+}
+
+.todo{
+    position: relative;
+}
+
+.doing{
+    position: relative;
+}
+
+.done{
+    position: relative;
+}
+
