@@ -4,15 +4,17 @@
     max-height: 100px;
     min-height: 50px;
     background: rgb(80, 80, 80);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-bottom: 0.1em white solid;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 .centered_header{
-    line-height: 100%;
     font-size: 2em;
+    
     color: rgb(255, 255, 255);
+    margin: 0 auto;
 }
 
 .name{
@@ -21,11 +23,20 @@
 
 .project_file{
     background: white;
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    
-    font-size: 2em;
+    display: table;
+    height: 100%;
     text-align: center;
+    font-size: 2em;   
+    width: auto 20%;
+}
+
+.project_file > div {
+    display: table-cell;
+    padding: 0 .5em;
+}
+
+.invisible{
+    opacity: 0;
+    width: 20%;
     
 }
