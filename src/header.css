@@ -1,42 +1,23 @@
 .header_bar{
-    height: 5%;
+    height: auto;
     width: 100%;
     max-height: 100px;
     min-height: 50px;
-    background: rgb(80, 80, 80);
-    border-bottom: 0.1em white solid;
     
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-.centered_header{
     font-size: 2em;
-    
     color: rgb(255, 255, 255);
-    margin: 0 auto;
-}
-
-.name{
-    background: rgb(58, 58, 58);
-}
-
-.project_file{
-    background: white;
-    display: table;
-    height: 100%;
     text-align: center;
-    font-size: 2em;   
-    width: auto 20%;
 }
 
-.project_file > div {
+.project_file_menu{
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;  
+    background: gray;
+}
+
+.project_file_menu > div {
     display: table-cell;
-    padding: 0 .5em;
-}
-
-.invisible{
-    opacity: 0;
-    width: 20%;
+    padding: 0 1em;
     
 }
