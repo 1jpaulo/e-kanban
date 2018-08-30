@@ -1,6 +1,5 @@
 .whiteboard_container{
     width: 100%;
-    padding: 0;
     display: flex;
     justify-content: space-around;
 }
@@ -8,8 +7,8 @@
 .whiteboard_cells{
     box-sizing: border-box;
     border-collapse: collapse;
+    width: auto;
     flex: 1;
-    width: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +28,10 @@
     width: auto;
     height: 100%;
     border: 2px dashed white;
-    margin: 2em 2em 0em 2em;
+    margin: 2rem 2rem 0em 2rem;
+    overflow: auto;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .tools{
@@ -40,4 +42,21 @@
     text-align: center;
     color: white;
     font-weight: 900;
+}
+
+.note{
+    width: auto; 
+    height: auto;
+    height: 4rem;
+    font-size: 1.3rem;
+    text-align: center;
+    background: black;
+    margin: 0.2rem;
+    color: white;
+
+}
+
+.note:nth-child(2n){
+    background: white;
+    color: black;
 }
