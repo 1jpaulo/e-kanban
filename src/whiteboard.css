@@ -28,20 +28,30 @@
     width: auto;
     height: 100%;
     border: 2px dashed white;
-    margin: 2rem 2rem 0em 2rem;
+    margin: 2rem 2rem 2em 2rem;
     overflow: auto;
     flex-wrap: wrap;
     display: flex;
 }
 
 .tools{
-    font-size: 3em;
-    line-height: 2em;
-    width: auto;
-    height: auto;
+    font-size: 3rem;
+    line-height: 1em;
+    padding: 1rem;
     text-align: center;
     color: white;
     font-weight: 900;
+    border-radius: 2rem;
+    border: .2rem solid white;
+    margin: auto auto 2rem auto;
+}
+.tools:active{
+    background: white;
+    color: rgb(58, 58, 58);
+}
+
+.tools::selection{
+    color: none;
 }
 
 .note{
