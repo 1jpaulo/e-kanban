@@ -1,42 +1,53 @@
 .whiteboard_container{
     width: 100%;
     display: flex;
-    justify-content: space-around;
 }
 
 .whiteboard_cells{
     box-sizing: border-box;
     border-collapse: collapse;
-    width: auto;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .title{
-    color: white !important;
-    width: auto;
-    height: auto;
-    font-size: 2.5em;
     background: gray;
     margin: 1em auto 0em auto;
+    
+    color: white !important;
     padding: 0 3em;
+    font-size: 2.5em;
     text-align: center;
 }
 
 .board{
-    width: auto;
     height: 100%;
     border: 2px dashed white;
     margin: 2rem 2rem 2em 2rem;
     overflow: auto;
     flex-wrap: wrap;
     display: flex;
+    align-content: flex-start;
+}
+
+.note{
+    height: 4rem;
+    font-size: 1rem;
+    background: black;
+    margin: 0.2rem;
+    color: white;
+
+}
+
+.note:nth-child(2n){
+    background: white;
+    color: black;
 }
 
 .tools{
     font-size: 3rem;
-    line-height: 1em;
+    line-height: .8em;
     padding: 1rem;
     text-align: center;
     color: white;
@@ -54,19 +65,3 @@
     color: none;
 }
 
-.note{
-    width: auto; 
-    height: auto;
-    height: 4rem;
-    font-size: 1.3rem;
-    text-align: center;
-    background: black;
-    margin: 0.2rem;
-    color: white;
-
-}
-
-.note:nth-child(2n){
-    background: white;
-    color: black;
-}
