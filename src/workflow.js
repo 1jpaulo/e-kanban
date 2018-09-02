@@ -36,7 +36,7 @@ wfobj.prototype = {
     {
         var node = document.createElement("DIV");
         node.classList.add("note");
-        var text = document.createTextNode("Lorem ipsum dolor.");
+        var text = document.createTextNode(test_input[Math.floor((Math.random() * test_input.length))]);
         node.appendChild(text);
 
         if(board === 'todo')
@@ -59,6 +59,16 @@ wfobj.prototype = {
     }
 };
 
+var test_input = [
+    'Project Documentation', 'Delete module b from /src', 'Debug Code', 
+    'Recode hash function', 'Undo changes to working tree at commit 08b7d', 
+    'Stretch window board in e-kanban', 'Search a better name for project', 
+    'Writing Documentation', 'Insert Vertical Flexbox', 'Use align content', 
+    'Configure http requests', 'Created subrotine resembling fibonacci function', 
+    'Reduced noise in singularity function', 'Developing a new footer', 
+    'Add copyright terms to footer', 'Add contacts info at the page', 
+    'Publish page at github pages'
+    ]
 
 function main(){
 
