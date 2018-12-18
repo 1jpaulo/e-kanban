@@ -36,6 +36,7 @@ wfobj.prototype = {
     {
         var node = document.createElement("DIV");
         node.classList.add("note");
+        this.modalWindow();
         var text = document.createTextNode(test_input[Math.floor((Math.random() * test_input.length))]);
         node.appendChild(text);
 
@@ -56,6 +57,30 @@ wfobj.prototype = {
         }
 
         return 1;
+    },
+
+    modalWindow: function(){
+        var input = document.createElement("input");
+        input.classList.add("taskinput");
+        input.type = "text";
+        input.placeholder = "What you wanna do next?";
+
+        var button = document.createElement("button");
+        button.classList.add("addbutton");
+        button.innerHTML = "Adicionar";
+        button.onclick = '';
+        var modal = document.createElement("DIV");
+        modal.classList.add("modalwindow");
+        modal.appendChild(input);
+        modal.appendChild(button);
+
+        var container = document.createElement("DIV");
+        container.classList.add("modalcontainer");
+        container.appendChild(modal);
+
+
+
+        document.body.insertBefore(container, document.body.firstChild);
     }
 };
 
