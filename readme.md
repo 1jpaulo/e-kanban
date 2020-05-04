@@ -1,1 +1,1 @@
-**A eletronic kanban designed to be small, intuitive, clean and lightweight.**
+**An eletronic kanban designed to be small.**
