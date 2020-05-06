@@ -9,11 +9,13 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .title{
-    background: gray;
-    margin: 1em auto 0em auto;
+    /*background: #595959;*/
+    border: 1px solid #595959;
+    margin: 1rem auto 0rem auto;
     
     color: white !important;
     padding: 0 3em;
@@ -22,9 +24,10 @@
 }
 
 .board{
+    width: 80%;
     height: 100%;
     border: 2px dashed white;
-    margin: 2rem 2rem 2em 2rem;
+    margin: 2rem;
     overflow: auto;
     flex-wrap: wrap;
     display: flex;
@@ -46,19 +49,22 @@
 }
 
 .tools{
+    cursor: pointer;
+    width: 10%;
     font-size: 3rem;
-    line-height: .8em;
-    padding: 1rem;
     text-align: center;
     color: white;
     font-weight: 900;
-    border-radius: 2rem;
-    border: .2rem solid white;
-    margin: auto auto 2rem auto;
+    border-radius: .7rem;
+    /*border: 1px solid #595959;*/
+    margin: 0rem auto 1rem auto;
+    transition: background-color 0.5s ease-in;
+    /*transition: color 2s ease-out;*/
 }
-.tools:active{
+
+.tools:hover{
     background: white;
-    color: rgb(58, 58, 58);
+    color: #262626;
 }
 
 .tools::selection{
@@ -94,7 +100,7 @@
 }
 
 .addbutton{
-    width: 40%;
+    width: 2rem;
     height: 2rem;
     color: white;
     background: none;

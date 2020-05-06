@@ -104,7 +104,7 @@ function main(){
     var adddoing = document.querySelectorAll(".tools")[1];
     var adddone = document.querySelectorAll(".tools")[2];
     
-    addtodo.addEventListener("click", 
+    /*addtodo.addEventListener("click", 
         function(event){
             //instance of wfobj
             i_wfobj.updateUI('todo');
@@ -123,7 +123,7 @@ function main(){
             //instance of wfobj
             i_wfobj.updateUI('done');
         }
-    );
+    );*/
 }
 
 window.onload = main;
