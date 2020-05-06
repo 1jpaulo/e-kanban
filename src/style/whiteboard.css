@@ -26,7 +26,8 @@
     height: 100%;
     border: 2px dashed white;
     margin: 2rem;
-    overflow: auto;
+    flex: 1 1 0;
+    overflow-y: auto;
     flex-wrap: wrap;
     display: flex;
     align-content: flex-start;
