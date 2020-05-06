@@ -119,9 +119,9 @@ function main(){
     // instancing workflow object
     var i_wfobj = new wfobj();
     // binding buttons
-    var addTodo = document.querySelectorAll(".tools")[0];
-    var addDoing = document.querySelectorAll(".tools")[1];
-    var addDone = document.querySelectorAll(".tools")[2];
+    var addTodo = document.querySelectorAll(".addTaskButton")[0];
+    var addDoing = document.querySelectorAll(".addTaskButton")[1];
+    var addDone = document.querySelectorAll(".addTaskButton")[2];
     
     addTodo.addEventListener("click", 
         function(event){

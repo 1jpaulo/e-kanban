@@ -13,10 +13,8 @@
 }
 
 .title{
-    /*background: #595959;*/
     border: 1px solid #595959;
     margin: 1rem auto 0rem auto;
-    
     color: white !important;
     padding: 0 3em;
     font-size: 2.5em;
@@ -40,7 +38,6 @@
     background: black;
     margin: 0.2rem;
     color: white;
-
 }
 
 .note:nth-child(2n){
@@ -48,71 +45,23 @@
     color: black;
 }
 
-.tools{
+.addTaskButton{
     cursor: pointer;
-    width: 10%;
+    width: 5rem;
     font-size: 3rem;
     text-align: center;
     color: white;
     font-weight: 900;
     border-radius: .7rem;
-    /*border: 1px solid #595959;*/
     margin: 0rem auto 1rem auto;
     transition: background-color 0.5s ease-in;
-    /*transition: color 2s ease-out;*/
 }
 
-.tools:hover{
+.addTaskButton:hover{
     background: white;
     color: #262626;
 }
 
-.tools::selection{
+.addTaskButton::selection{
     color: none;
 }
-
-.modalcontainer{
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.modalwindow{
-    z-index: 999;
-    position: fixed;
-    width: auto;
-    height: auto;
-    padding: 3rem 1rem;
-    background: gray;
-    border: 10px solid rgb(70, 70, 70);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.taskinput{
-    width: 100%;
-    height: 3rem;
-    font-size: 2rem;
-}
-
-.addbutton{
-    width: 2rem;
-    height: 2rem;
-    color: white;
-    background: none;
-    border-radius: 1em;
-    border: 1px solid rgb(97, 97, 97);
-}
-
-.addbutton:focus{
-    outline: none;
-}
-
-.addbutton:active{
-    background: rgb(97, 97, 97);
-}
-
